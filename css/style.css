@@ -979,6 +979,11 @@ a:focus {
   text-align: left;
 }
 
+/* @media (max-width: 420px){
+  .custom-box{
+    flex-direction: column!important;
+  }
+} */
 .custom-box{
   flex-direction: row!important;
  justify-content: space-between;
@@ -998,13 +1003,49 @@ a:focus {
   justify-content: unset!important;
 }
 .custom-detail-box{
-  background: linear-gradient(to right, rgba(245, 246, 252, 0.52), rgb(107 70 193)), url(../images/slider-img.png);
+  background: linear-gradient(to left, rgba(245, 246, 252, 0.52), rgb(107 70 193)), url(../zengit/img_cta.png);
   padding-top: 30vh;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: right top;
+      padding-left: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 10%;
 }
 .bg-primary2{
  background: #00204a;
  color:#fff;
 }
+
 /*# sourceMappingURL=style.css.map */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background:transparent;
+  cursor: pointer;
+  width: 100%;
+    border-radius: 50%;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  background: rgba(107, 70, 193, 1); 
+  height: 0.5rem;
+    border-radius: 8px;
+}
+
+/******** Firefox ********/
+input[type="range"]::-moz-range-track {
+  background: rgba(107, 70, 193, 1); 
+  height: 0.5rem;
+    border-radius: 50%;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+   -webkit-appearance: none; /* Override default look */
+   appearance: none;
+   margin-top: -8px; /* Centers thumb on the track */
+  background-color: rgba(107, 70, 193, 1);
+   height: 1.5rem;
+   width: 1.5rem; 
+   border-radius: 50%;
+}

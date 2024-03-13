@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="shortcut icon" href="images/logo.jpg" type="">
+
+    <title> Zeng IT </title>
+
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <!--owl slider stylesheet -->
+    <link rel="stylesheet" type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+    <!-- font awesome style -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+    <style>
+      .main {
+        background: #fff;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+      }
+
+      .main-container {
+        padding: 1rem;
+        width: 95vw;
+      }
+
+      .content-items {
+        flex: 0 0 30%;
+        border: solid rgba(214, 210, 223, 1) 1px;
+        border-radius: 8px;
+        padding: 1.25rem;
+        display: flex;
+        flex-direction: column;
+        gap: .7rem;
+      }
+
+
+
+      .btn-left2 {
+        align-self: baseline;
+        display: inline-block;
+        padding: 10px 45px;
+        background-color: #6B46C1;
+        border-radius: 8px;
+        color: #ffffff;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+      }
+
+
+
+      .side-bar {
+        padding: 1rem;
+        width: 95vw;
+        display: flex;
+        flex-direction: column;
+      }
+
+
+
+      .content-img-main {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 6px;
+      }
+
+      .fw-bold {
+        font-weight: bold;
+      }
+
+      .color-purple {
+        color: #6B46C1;
+      }
+
+      .img-inline {
+        display: inline-block;
+      }
+
+      .content-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 1rem;
+        flex-direction: column;
+      }
+
+      .content-img {
+        width: 100%;
+        height: 100%;
+        border-radius: 6px;
+        align-self: center;
+        position: relative;
+        min-width: 270px;
+        min-height: 150px;
+      }
+
+      select {
+        border: solid rgba(214, 210, 223, 1) 1px;
+        border-radius: .25rem;
+        height: 40px;
+        color: #495057;
+        font-size: 1rem;
+        line-height: 1.5;
+        padding: .375rem .75rem
+      }
+
+      .div-filter {
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+        border: solid rgba(214, 210, 223, 1) 1px;
+        padding: 20px;
+      }
+
+      .bookmark {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+      }
+
+      /* .content-img {
+        max-width: 270px;
+        max-height: 150px;
+      } */
+
+      /* 
+      @media (min-width: 480px) {
+        .main {
+          flex-direction: row;
+        }
+
+        .side-bar {
+          width: 25vw;
+          padding: 2rem;
+        }
+
+        .main-container {
+          width: 75vw;
+        }
+
+      } */
+
+      /* @media (min-width: 576px) {
+        .main {
+          flex-direction: row;
+          padding: 2rem 5rem;
+        }
+
+        .main-container {
+          padding: 2rem;
+        }
+
+        .content-container {
+          flex-direction: row;
+        }
+
+      }
+
+      @media (min-width: 576px) {
+        .main {
+          flex-direction: row;
+        }
+      } */
+
+      @media (min-width: 1300px) {
+        .main {
+          flex-direction: row;
+        }
+
+        .side-bar {
+          width: 25vw;
+          padding: 2rem;
+        }
+
+        .main-container {
+          width: 75vw;
+        }
+
+        .main-container {
+          padding: 2rem;
+        }
+
+        .content-container {
+          flex-direction: row;
+        }
+      }
+
+      @media (min-width: 1120px) {
+        .main {
+          flex-direction: row;
+        }
+
+        .side-bar {
+          width: 25vw;
+          padding: 2rem;
+        }
+
+        .main-container {
+          width: 75vw;
+        }
+
+        .main-container {
+          padding: 2rem;
+        }
+
+        .content-container {
+          flex-direction: row;
+        }
+      }
+
+      @media only screen and (min-width: 1200px) {
+        .main {
+          flex-direction: row;
+        }
+
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <div class="hero_area">
+
+      <div class="hero_bg_box">
+        <div class="bg_img_box">
+          <img src="images/hero-bg.png" alt="">
+        </div>
+      </div>
+
+      <!-- header section strats -->
+      <header class="header_section">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container ">
+            <a class="navbar-brand" href="index.html">
+              <span>
+                Zeng IT
+              </span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class=""> </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav  ">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="courses.html">Courses</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html"> About</a>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link" href="service.html">Services</a>
+                </li> -->
+                <li class="nav-item">
+                  <a class="nav-link" href="why.html">Why Us</a>
+                </li>
+
+                <li class="nav-item">
+
+                  <a class="btn btn-left btn btn-light font-weight-bold color-violet" href="#">
+                    Join now</a>
+                </li>
+
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <div class="container-fluid main">
+        <div class="side-bar">
+          <h5 class="fw-bold">Filters</h5>
+          <div style="border: solid rgba(214, 210, 223, 1) 1px; border-radius: 8px; ">
+            <div class="div-filter">
+              <p style="font-weight: bold">Keyword</p>
+              <input type="text" placeholder="e.g Job Title" style="border: solid rgba(214, 210, 223, 1) 1px; border-radius: .25rem; height: 40px; color: #495057 ;font-size: 1rem;
+    line-height: 1.5; padding: .375rem .75rem">
+            </div>
+
+            <div class="div-filter  ">
+              <p style="font-weight: bold">Category</p>
+              <select name="" id="">
+                <option value="">All Categories</option>
+                <option value="">Software Development</option>
+                <option value="">Hardware Engineering</option>
+                <option value="">Data Science & Analytics</option>
+                <option value="">Mechanical Engineering</option>
+                <option value="">Civil and Structural Engineering</option>
+                <option value="">Biotechnology and Life Sciences</option>
+                <option value="">Chemical and Process Engineering</option>
+                <option value="">Environmental and Sustainability</option>
+              </select>
+            </div>
+            <div class="div-filter ">
+              <p style="font-weight: bold;width: 100%;">Course Duration <span style="float: right;">1 Week</span>
+              </p>
+              <input type="range">
+            </div>
+            <div class="div-filter ">
+              <p style="font-weight: bold;width: 100%;">Course Price <span style="float: right;">$50</span></p>
+              <input type="range">
+            </div>
+          </div>
+        </div>
+        <div class=" content main-container">
+          <h5 class="fw-bold">Found 79 Courses</h5>
+          <div class="content-container">
+
+            <div class="content-items">
+              <div class="content-img" style="position: relative;">
+                <img src="zengit/img_services1.png" alt="" class="content-img-main">
+                <img src="zengit/Component 1.png" alt="" class="bookmark">
+              </div>
+              <p class="color-purple">By John Smith</p>
+              <h5 class="fw-bold">Data Structures and Algorithms in Python</h5>
+              <p>Skills you'll gain: Python Programming, Computer Programming, Data Analysis</p>
+
+              <div>
+                <img src="zengit/clock.png" alt="" class="img-inline">
+                <small>Beginner · Course · 1 - 3 Months</small>
+              </div>
+
+              <div>
+                <img src="zengit/star-gold.png" alt="">
+                <img src="zengit/star-gold.png" alt="">
+                <img src="zengit/star-gold.png" alt="">
+                <img src="zengit/star-gold.png" alt="">
+                <img src="zengit/star.png" alt="">
+                <small>4.5 • 39 Reviews</small>
+              </div>
+              <div class="btn btn-left2">
+                Subscribe Now for $100
+              </div>
+            </div>
+            <div class="content-items">
+              <div class="content-img" style="position: relative;">
+                <img src="zengit/img_services2.png" alt="" class="content-img-main">
+                <img src="zengit/Component 1.png" alt="" class="bookmark">
+              </div>
+              <p class="color-purple">By John Smith</p>
+              <h5 class="fw-bold">Data Structures and Algorithms in Python</h5>
+              <p>Skills you'll gain: Python Programming, Computer Programming, Data Analysis</p>
+
+              <div>
+                <img src="zengit/clock.png" alt="" class="img-inline">
+                <small>Beginner · Course · 1 - 3 Months</small>
+              </div>
+
+              <div>
+                <img src="zengit/star-gold.png" alt="">
+                <img src="zengit/star-gold.png" alt="">
+                <img src="zengit/star-gold.png" alt="">
+                <img src="zengit/star-gold.png" alt="">
+                <img src="zengit/star.png" alt="">
+                <small>4.5 • 39 Reviews</small>
+              </div>
+              <div class="btn btn-left2">
+                Subscribe Now for $100
+              </div>
+            </div>
+            <div class="content-items">
+              <div class="content-img" style="position: relative;">
+                <img src="zengit/img_services3.png" alt="" class="content-img-main">
+                <img src="zengit/Component 1.png" alt="" class="bookmark">
+              </div>
+              <p class="color-purple">By John Smith</p>
+              <h5 class="fw-bold">Data Structures and Algorithms in Python</h5>
+              <p>Skills you'll gain: Python Programming, Computer Programming, Data Analysis</p>
+
+              <div>
+                <img src="zengit/clock.png" alt="" class="img-inline">
+                <small>Beginner · Course · 1 - 3 Months</small>
+              </div>
+
+              <div>
+                <img src="zengit/star-gold.png" alt="">
+                <img src="zengit/star-gold.png" alt="">
+                <img src="zengit/star-gold.png" alt="">
+                <img src="zengit/star-gold.png" alt="">
+                <img src="zengit/star.png" alt="">
+                <small>4.5 • 39 Reviews</small>
+              </div>
+              <div class="btn btn-left2">
+                Subscribe Now for $100
+              </div>
+            </div>
+
+            <div class="content-items">
+              <div class="content-img" style="position: relative;">
+                <img src="zengit/img_services4.png" alt="" class="content-img-main">
+                <img src="zengit/Component 1.png" alt="" class="bookmark">
+              </div>
+              <p class="color-purple">By John Smith</p>
+              <h5 class="fw-bold">Data Structures and Algorithms in Python</h5>
+              <p>Skills you'll gain: Python Programming, Computer Programming, Data Analysis</p>
+
+              <div>
+                <img src="zengit/clock.png" alt="" class="img-inline">
+                <small>Beginner · Course · 1 - 3 Months</small>
+              </div>
+
+              <div>
+                <img src="zengit/star-gold.png" alt="">
+                <img src="zengit/star-gold.png" alt="">
+                <img src="zengit/star-gold.png" alt="">
+                <img src="zengit/star-gold.png" alt="">
+                <img src="zengit/star.png" alt="">
+                <small>4.5 • 39 Reviews</small>
+              </div>
+              <div class="btn btn-left2">
+                Subscribe Now for $100
+              </div>
+            </div>
+
+            <div class="content-items">
+              <div class="content-img" style="position: relative;">
+                <img src="zengit/img_services5.png" alt="" class="content-img-main">
+                <img src="zengit/Component 1.png" alt="" class="bookmark">
+              </div>
+              <p class="color-purple">By John Smith</p>
+              <h5 class="fw-bold">Data Structures and Algorithms in Python</h5>
+              <p>Skills you'll gain: Python Programming, Computer Programming, Data Analysis</p>
+
+              <div>
+                <img src="zengit/clock.png" alt="" class="img-inline">
+                <small>Beginner · Course · 1 - 3 Months</small>
+              </div>
+
+              <div>
+                <img src="zengit/star-gold.png" alt="">
+                <img src="zengit/star-gold.png" alt="">
+                <img src="zengit/star-gold.png" alt="">
+                <img src="zengit/star-gold.png" alt="">
+                <img src="zengit/star.png" alt="">
+                <small>4.5 • 39 Reviews</small>
+              </div>
+              <div class="btn btn-left2">
+                Subscribe Now for $100
+              </div>
+            </div>
+
+
+            <div class="content-items">
+              <div class="content-img" style="position: relative;">
+                <img src="zengit/img_services6.png" alt="" class="content-img-main">
+                <img src="zengit/Component 1.png" alt="" class="bookmark">
+              </div>
+              <p class="color-purple">By John Smith</p>
+              <h5 class="fw-bold">Data Structures and Algorithms in Python</h5>
+              <p>Skills you'll gain: Python Programming, Computer Programming, Data Analysis</p>
+
+              <div>
+                <img src="zengit/clock.png" alt="" class="img-inline">
+                <small>Beginner · Course · 1 - 3 Months</small>
+              </div>
+
+              <div>
+                <img src="zengit/star-gold.png" alt="">
+                <img src="zengit/star-gold.png" alt="">
+                <img src="zengit/star-gold.png" alt="">
+                <img src="zengit/star-gold.png" alt="">
+                <img src="zengit/star.png" alt="">
+                <small>4.5 • 39 Reviews</small>
+              </div>
+              <div class="btn btn-left2">
+                Subscribe Now for $100
+              </div>
+            </div>
+
+            <div class="content-items">
+              <div class="content-img" style="position: relative;">
+                <img src="zengit/img_services7.png" alt="" class="content-img-main">
+                <img src="zengit/Component 1.png" alt="" class="bookmark">
+              </div>
+              <p class="color-purple">By John Smith</p>
+              <h5 class="fw-bold">Data Structures and Algorithms in Python</h5>
+              <p>Skills you'll gain: Python Programming, Computer Programming, Data Analysis</p>
+
+              <div>
+                <img src="zengit/clock.png" alt="" class="img-inline">
+                <small>Beginner · Course · 1 - 3 Months</small>
+              </div>
+
+              <div>
+                <img src="zengit/star-gold.png" alt="">
+                <img src="zengit/star-gold.png" alt="">
+                <img src="zengit/star-gold.png" alt="">
+                <img src="zengit/star-gold.png" alt="">
+                <img src="zengit/star.png" alt="">
+                <small>4.5 • 39 Reviews</small>
+              </div>
+              <div class="btn btn-left2">
+                Subscribe Now for $100
+              </div>
+            </div>
+
+            <div class="content-items">
+              <div class="content-img" style="position: relative;">
+                <img src="zengit/img_services8.png" alt="" class="content-img-main">
+                <img src="zengit/Component 1.png" alt="" class="bookmark">
+              </div>
+              <p class="color-purple">By John Smith</p>
+              <h5 class="fw-bold">Data Structures and Algorithms in Python</h5>
+              <p>Skills you'll gain: Python Programming, Computer Programming, Data Analysis</p>
+
+              <div>
+                <img src="zengit/clock.png" alt="" class="img-inline">
+                <small>Beginner · Course · 1 - 3 Months</small>
+              </div>
+
+              <div>
+                <img src="zengit/star-gold.png" alt="">
+                <img src="zengit/star-gold.png" alt="">
+                <img src="zengit/star-gold.png" alt="">
+                <img src="zengit/star-gold.png" alt="">
+                <img src="zengit/star.png" alt="">
+                <small>4.5 • 39 Reviews</small>
+              </div>
+              <div class="btn btn-left2">
+                Subscribe Now for $100
+              </div>
+            </div>
+
+            <div class="content-items">
+              <div class="content-img" style="position: relative;">
+                <img src="zengit/img_services9.png" alt="" class="content-img-main">
+                <img src="zengit/Component 1.png" alt="" class="bookmark">
+              </div>
+              <p class="color-purple">By John Smith</p>
+              <h5 class="fw-bold">Data Structures and Algorithms in Python</h5>
+              <p>Skills you'll gain: Python Programming, Computer Programming, Data Analysis</p>
+
+              <div>
+                <img src="zengit/clock.png" alt="" class="img-inline">
+                <small>Beginner · Course · 1 - 3 Months</small>
+              </div>
+
+              <div>
+                <img src="zengit/star-gold.png" alt="">
+                <img src="zengit/star-gold.png" alt="">
+                <img src="zengit/star-gold.png" alt="">
+                <img src="zengit/star-gold.png" alt="">
+                <img src="zengit/star.png" alt="">
+                <small>4.5 • 39 Reviews</small>
+              </div>
+              <div class="btn btn-left2">
+                Subscribe Now for $100
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+      <!-- info section -->
+
+      <section class="info_section layout_padding2">
+        <div class="container-fluid" style="padding: 0px 10rem;">
+          <div class="row">
+
+
+
+            <div class="col-md-6 col-lg-2 mx-auto info_col">
+              <div class="info_link_box">
+                <h4>
+                  For Engineers
+                </h4>
+                <div class="info_links">
+                  <a class="active" href="#">
+                    Browse Jobs
+                  </a>
+                  <a class="" href="#">
+                    Add Resume
+                  </a>
+                  <a class="" href="#">
+                    Job Alerts
+                  </a>
+                  <a class="" href="#">
+                    My Bookmarks
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-2 mx-auto info_col">
+              <div class="info_link_box">
+                <h4>
+                  For Companies
+                </h4>
+                <div class="info_links">
+                  <a class="active" href="#">
+                    Browse Engineers
+                  </a>
+                  <a class="" href="#">
+                    Post a Job
+                  </a>
+                  <a class="" href="#">
+                    Post a Task
+                  </a>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-2 mx-auto info_col">
+              <div class="info_link_box">
+                <h4>
+                  Helpful Links
+                </h4>
+                <div class="info_links">
+                  <a class="active" href="#">
+                    Contact
+                  </a>
+                  <a class="" href="#">
+                    Privacy Policy
+                  </a>
+                  <a class="" href="#">
+                    Terms of Use
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-2 mx-auto info_col">
+              <div class="info_link_box">
+                <h4>
+                  Account
+                </h4>
+                <div class="info_links">
+                  <a class="active" href="#">
+                    Log In
+
+                  </a>
+                  <a class="" href="#">
+                    My Account
+                  </a>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 info_col ">
+              <h4>
+                Sign Up For a Newsletter
+              </h4>
+              <p>Weekly breaking news, analysis and cutting edge advices on job searching.</p>
+              <form action="#">
+                <input type="text" placeholder="Enter your email address" />
+                <button type="submit">
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- end info section -->
+
+      <!-- footer section -->
+      <section class="footer_section">
+        <div class="container">
+          <p>
+            &copy; <span id="displayYear"></span> All Rights Reserved
+            .
+          </p>
+        </div>
+      </section>
+      <!-- footer section -->
+
+      <!-- jQery -->
+      <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+      <!-- popper js -->
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+      <!-- bootstrap js -->
+      <script type="text/javascript" src="js/bootstrap.js"></script>
+      <!-- owl slider -->
+      <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+        </script>
+      <!-- custom js -->
+      <script type="text/javascript" src="js/custom.js"></script>
+      <!-- Google Map -->
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+      </script>
+      <!-- End Google Map -->
+
+  </body>
+
+</html>
