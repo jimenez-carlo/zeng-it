@@ -1,690 +1,172 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
   <head>
-    <!-- Basic -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- Mobile Metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <!-- Site Metas -->
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <link rel="shortcut icon" href="images/logo.jpg" type="">
-
-    <title> Zeng IT </title>
-
-    <!-- bootstrap core css -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-
-    <!-- fonts style -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-
-    <!--owl slider stylesheet -->
-    <link rel="stylesheet" type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-
-    <!-- font awesome style -->
-    <link href="css/font-awesome.min.css" rel="stylesheet" />
-
-    <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet" />
-    <!-- responsive style -->
-    <link href="css/responsive.css" rel="stylesheet" />
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeng it</title>
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon">
   </head>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
 
   <body>
+    <div class="container-fluid">
+      <header class="d-flex flex-wrap align-items-start justify-content-center justify-content-md-between pt-3">
+        <a href="/" class="d-flex align-items-center col-md-1 mb-2 mb-md-0 text-dark text-decoration-none">
+          <svg width="101" height="30" viewBox="0 0 101 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M88.6249 2.64612C88.6249 4.04888 87.4826 5.22848 86.0229 5.22848C84.595 5.22848 83.421 4.04888 83.421 2.64612C83.421 1.1796 84.595 0 86.0229 0C87.4826 0 88.6249 1.1796 88.6249 2.64612ZM17.7059 23.4644V19.2561H5.64813L17.5473 4.97343V0.860786H0.412504V5.03719H11.7088L0 19.1923V23.4644H17.7059ZM27.9551 23.9426C31.7945 23.9426 34.2696 21.6791 35.0628 18.9692L31.5407 17.9171C31.033 19.3199 29.9541 20.3082 27.9868 20.3082C25.8926 20.3082 24.1473 18.8098 24.0522 16.7375H35.2215C35.2215 16.7219 35.2253 16.6718 35.231 16.5963L35.2311 16.5962L35.2311 16.5959C35.2488 16.3628 35.285 15.8875 35.285 15.4304C35.285 10.3932 32.3974 7.30074 27.5743 7.30074C23.5762 7.30074 19.8954 10.5526 19.8954 15.5579C19.8954 20.8502 23.6714 23.9426 27.9551 23.9426ZM24.1473 13.8363H31.1282C31.0647 12.2742 30.0493 10.7439 27.6378 10.7439C25.4483 10.7439 24.2425 12.4017 24.1473 13.8363ZM42.8369 23.4644V14.4421C42.8369 12.6249 43.9158 11.1902 45.7562 11.1902C47.787 11.1902 48.6437 12.5611 48.6437 14.3146V23.4644H52.864V13.5813C52.864 10.1382 51.087 7.36451 47.2158 7.36451C45.5341 7.36451 43.662 8.09777 42.71 9.7237V7.77896H38.6167V23.4644H42.8369ZM71.8074 21.7747C71.8074 26.0786 69.491 30 63.6208 30C59.3371 30 56.4813 27.322 56.0371 24.3252L59.8448 23.305C60.1304 25.0266 61.4948 26.2699 63.4939 26.2699C66.1593 26.2699 67.6506 24.9309 67.6506 21.9022V20.7545C67.016 21.7747 65.5564 22.763 63.3035 22.763C59.1467 22.763 56.0371 19.543 56.0371 15.1435C56.0371 10.9989 59.0198 7.49203 63.3035 7.49203C65.7785 7.49203 67.2064 8.57598 67.7458 9.62806V7.77896H71.8074V21.7747ZM64.0333 19.1286C61.8439 19.1286 60.289 17.5983 60.289 15.1435C60.289 12.7205 61.9391 11.1902 64.0333 11.1902C66.0641 11.1902 67.7141 12.7205 67.7141 15.1435C67.7141 17.5664 66.191 19.1286 64.0333 19.1286ZM88.1489 23.4644V7.77896H83.9287V23.4644H88.1489ZM101 23.305C100.619 23.4644 99.8577 23.6876 98.6202 23.6876C95.574 23.6876 93.6701 21.8703 93.6701 18.8417V11.5409H90.8461V7.77896H91.6393C93.2893 7.77896 94.0509 6.69501 94.0509 5.29224V3.09245H97.8586V7.77896H101V11.5409H97.8586V18.1084C97.8586 19.4793 98.4932 19.9256 99.699 19.9256C100.207 19.9256 100.778 19.8619 101 19.7981V23.305Z"
+              fill="#6B46C1" />
+          </svg>
+        </a>
 
-    <div class="hero_area">
+        <form class="col-12 col-lg-3 mb-3 mb-lg-0 me-lg-12" style="min-width: 23rem;">
+          <div class="input-group">
+            <span class="input-group-text search-field-icon" id="basic-addon1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                viewBox="0 0 16 16">
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0">
+                </path>
+              </svg>
+            </span>
+            <input type="text" class="form-control search-field" placeholder="Search engineers, scientists or projects"
+              aria-label="Search engineers, scientists or projects" aria-describedby="basic-addon1">
+          </div>
+        </form>
 
-      <div class="hero_bg_box">
-        <div class="bg_img_box">
-          <img src="images/hero-bg.png" alt="">
-        </div>
-      </div>
 
-      <!-- header section strats -->
-      <header class="header_section">
-        <div class="container-fluid">
-          <nav class="navbar navbar-expand-lg custom_nav-container ">
-            <a class="navbar-brand" href="index.html">
-              <span>
-                Zeng IT
-              </span>
-            </a>
+        <ul class="nav col-md-6 col-sm-12 justify-content-lg-end">
+          <!-- <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search engineers, scientists or projects"
+              aria-label="Search">
+          </form> -->
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class=""> </span>
-            </button>
+          <li><a href="#" class="nav-link pt-2 pb-4 link-dark">Browse Projects</a></li>
+          <li><a href="#" class="nav-link pt-2 pb-4 link-dark">Find Engineers & Scientists</a></li>
+          <li><a href="#" class="nav-link pt-2 pb-4 link-dark active">Courses</a></li>
+          <li><a href="#" class="nav-link pt-2 pb-4 link-dark">Why Zeng It</a></li>
+          <li><a href="#" class="nav-link pt-2 pb-4 link-dark">Sign In</a></li>
+        </ul>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav  ">
-                <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="courses.html">Courses</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="about.html"> About</a>
-                </li>
-                <!-- <li class="nav-item">
-                  <a class="nav-link" href="service.html">Services</a>
-                </li> -->
-                <li class="nav-item">
-                  <a class="nav-link" href="why.html">Why Us</a>
-                </li>
-
-                <li class="nav-item">
-
-                  <a class="btn btn-light font-weight-bold color-violet" href="#">
-                    Join now</a>
-                </li>
-
-              </ul>
-            </div>
-          </nav>
+        <div class="col-md-1 text-end">
+          <button type="button" class="btn btn-primary text-nowrap">Start Project</button>
         </div>
       </header>
-      <!-- end header section -->
-      <!-- slider section -->
-      <section class="slider_section ">
-        <div id="customCarousel1" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="container ">
-                <div class="row">
-                  <div class="col-md-6 ">
-                    <div class="detail-box">
-                      <h2 class="custom-h2">
-                        Elevate Your Expertise, Engineer Your Success with <h1>Zeng It</h1>
-                      </h2>
-                      <p>
-                        Discover Cutting-Edge Courses, Transform Your Skills, Shape the Future
-                      </p>
-
-                      <div class="btn-box">
-                        <a href="" class="btn1">
-                          Search
-                        </a>
-                      </div>
-                      <div style="display: flex;justify-content: space-between;width: 50%;margin-top:1rem"
-                        class="text-white">
-                        <div>
-                          <h5 style="font-size: 20px;">130</h5>
-                          <p>Courses</p>
-                        </div>
-                        <div>
-                          <h5 style="font-size: 20px;">50</h5>
-                          <p>Experts</p>
-                        </div>
-                        <div>
-                          <h5 style="font-size: 20px;">314</h5>
-                          <p>Credential Issued</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="img-box">
-                      <img src="zengit/Headline.png" alt="">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-      </section>
-      <!-- end slider section -->
     </div>
 
+    <main>
+      <div class="position-relative overflow-hidden p-0 p-md-5 text-center bg-body-tertiary hero">
+        <div class="row">
+          <div class="col-md-6 p-lg-5 mx-auto my-6">
+            <h1 class="text-light">Elevate Your Expertise, Engineer <br>Your Success with Zeng It</h1>
+            <h2 class="text-light">Discover Cutting-Edge Courses, Transform Your Skills,<br> Shape the Future</h2>
 
-    <!-- start potential -->
+            <div class="input-group py-1">
+              <span class="input-group-text bg-light hero-search-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-search"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0">
+                  </path>
+                </svg>
+              </span>
+              <input type="text" class="form-control hero-search" aria-label="What do you want to learn today"
+                placeholder="What do you want to learn today">
+              <span class="input-group-text hero-search-btn bg-light">
+                <button type="button" class="btn btn-lg btn-primary">Search</button>
+              </span>
+            </div>
 
-    <section class="service_section layout_padding">
-      <div class="service_container">
-        <div class="container ">
-
-          <div class="row custom-row">
-
-            <div class="col-md-6 ">
+            <div class="row d-flex justify-content-between lead fw-normal mt-4">
               <div
-                style="width:100%; height: 100%; max-width: 630px;max-height: 567px;border-style:solid; border: 10px;position: relative;">
-                <img src="zengit/SubImg1.png" alt=""
-                  style="width:100%; height: 100%; max-width: 410px;max-height: 410px;border-style:solid; border: 10px;border-color: #fff;position: absolute;top: 0;left: 0; object-fit: cover;">
-                <img src="zengit/SubImg2.png" alt=""
-                  style="width:100%; height: 100%; max-width: 410px;max-height: 410px;border-style:solid; border: 10px;border-color: #fff;position: absolute;bottom: 0;right: 0;">
+                class="col-lg-4 col-md-6 mb-5 mb-md-5 mb-lg-0 position-relative border-1 border-end border-semi-light">
+                <h2 class="fw-bold text-white">130</h2>
+                <p class="text-white text-start">Courses</p>
               </div>
 
-            </div>
-
-            <div class="col-md-6 ">
-              <div class="heading_container">
-                <h2>
-                  Unlock <span>Your Potential</span>
-                </h2>
-                <p>
-                  Empower Your Career with Zeng It
-                </p>
-              </div>
-
-              <div class="box custom-box">
-                <div class="img-box">
-                  <img src="zengit/bullet_1.png" alt="">
-                </div>
-                <div class="detail-box">
-                  <h5>
-                    Earn Certificates
-                  </h5>
-                  <p>
-                    Complete courses and earn industry-recognized certificates to showcase your expertise and enhance
-                    your credibility in
-                    the job market.
-                  </p>
-                </div>
-              </div>
-
-              <div class="box custom-box">
-                <div class="img-box">
-                  <img src="zengit/bullet_2.png" alt="">
-                </div>
-                <div class="detail-box">
-                  <h5>
-                    Access Anywhere, Anytime
-                  </h5>
-                  <p>
-                    Enjoy the flexibility of learning at your own pace and convenience. Access courses on any device,
-                    anytime, and from
-                    anywhere in the world.
-                  </p>
-                </div>
-              </div>
-
-              <div class="box custom-box">
-                <div class="img-box">
-                  <img src="zengit/bullet_3.png" alt="" style="ba">
-                </div>
-                <div class="detail-box">
-                  <h5>
-                    Expert-Led Curriculum
-                  </h5>
-                  <p>
-                    Gain insights from industry experts and leading professionals in science and engineering. Access
-                    curated content
-                    designed to help you stay ahead in your field.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-      </div>
-    </section>
-    <!-- end potential -->
-
-
-    <!-- Popular Courses -->
-
-    <section class="about_section layout_padding">
-      <div class="container  ">
-        <div class="heading_container">
-          <h2>
-            <span>Popular</span> Course Categories
-          </h2>
-          <p>
-            Huge community of designers, developers and creatives ready for your project.
-          </p>
-        </div>
-        <div class="row">
-          <div class="col-md-3 ">
-            <div class="box custom-box" style="background: #F9F6FF;mix-blend-mode: luminosity;">
-              <div class="img-box">
-                <img src="zengit/category_1.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>Software Development</h5>
-                <p>284 Courses</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 ">
-            <div class="box custom-box" style="background: #F9F6FF;mix-blend-mode: luminosity;">
-              <div class="img-box">
-                <img src="zengit/category_2.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>Hardware Engineering</h5>
-                <p>284 Courses</p>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="col-md-3 ">
-            <div class="box custom-box" style="background: #F9F6FF;mix-blend-mode: luminosity;">
-              <div class="img-box">
-                <img src="zengit/category_3.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>DataScience & Analytics</h5>
-                <p>284 Courses</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 ">
-            <div class="box custom-box" style="background: #F9F6FF;mix-blend-mode: luminosity;">
-              <div class="img-box">
-                <img src="zengit/category_4.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>Mechanical Engineering</h5>
-                <p>284 Courses</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-3 ">
-            <div class="box custom-box" style="background: #F9F6FF;mix-blend-mode: luminosity;">
-              <div class="img-box">
-                <img src="zengit/category_5.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>Civil & Structural Engineering</h5>
-                <p>284 Courses</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3 ">
-            <div class="box custom-box" style="background: #F9F6FF;mix-blend-mode: luminosity;">
-              <div class="img-box">
-                <img src="zengit/category_6.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>Biotechnology & Life Sciences</h5>
-                <p>284 Courses</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3 ">
-            <div class="box custom-box" style="background: #F9F6FF;mix-blend-mode: luminosity;">
-              <div class="img-box">
-                <img src="zengit/category_7.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>Chem & Process Engineering</h5>
-                <p>284 Courses</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 ">
-            <div class="box custom-box" style="background: #F9F6FF;mix-blend-mode: luminosity;">
-              <div class="img-box">
-                <img src="zengit/category_8.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>Environmental & Sustainability</h5>
-                <p>284 Courses</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- end popular courses -->
-
-
-
-
-
-
-    <!-- client section -->
-
-    <section class="client_section layout_padding">
-      <div class="container">
-        <div class="heading_container heading_center psudo_white_primary mb_45">
-          <h2>
-            Hear From Our Users <span>Customers</span>
-          </h2>
-          <p>
-            What Our Users Say
-          </p>
-        </div>
-        <div class="carousel-wrap ">
-          <div class="owl-carousel client_owl-carousel">
-            <div class="item">
-              <div class="box">
-                <div class="img-box">
-                  <img src="images/client1.jpg" alt="" class="box-img">
-                </div>
-                <div class="detail-box">
-                  <div class="client_id">
-                    <div class="client_info">
-                      <h6>
-                        Computer Engineer
-                      </h6>
-                      <p>
-                        Olivia Hoxha
-                      </p>
-                    </div>
-                    <i class="fa fa-quote-left" aria-hidden="true"></i>
-                  </div>
-                  <p>
-                    Zeng It has been a game-changer for me. The courses are not only comprehensive but also taught by
-                    industry experts who
-                    bring real-world insights into the learning experience. I've gained valuable skills that have helped
-                    me advance in my
-                    career.</p>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="box">
-                <div class="img-box">
-                  <img src="images/client2.jpg" alt="" class="box-img">
-                </div>
-                <div class="detail-box">
-                  <div class="client_id">
-                    <div class="client_info">
-                      <h6>
-                        Elise Borg
-                      </h6>
-                      <p>
-                        Computer Engineer
-                      </p>
-                    </div>
-                    <i class="fa fa-quote-left" aria-hidden="true"></i>
-                  </div>
-                  <p>
-                    I've tried other online learning platforms, but Zeng It stands out for its quality content and
-                    user-friendly interface.
-                    The ability to earn certificates has added credibility to my resume and opened up new opportunities
-                    for me. Highly
-                    recommended!</p>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- end client section -->
-
-    <!-- start potential -->
-
-    <section class="service_section layout_padding bg-primary2">
-      <div class="service_container">
-        <div class="container ">
-
-          <div class="row">
-
-            <div class="col-md-6 ">
               <div
-                style="width:100%; height: 100%; max-width: 630px;max-height: 567px;border-style:solid; border: 10px;position: relative;">
-                <img src="zengit/SubImg3.png" alt=""
-                  style="width:100%; height: 100%; max-width: 410px;max-height: 410px;position: absolute;top: 0;left: 0; object-fit: cover;">
-                <img src="zengit/SubImg4.png" alt=""
-                  style="width:100%; height: 100%; max-width: 410px;max-height: 410px;border-style:solid; border: 10px;border-color: #fff;position: absolute;bottom: 0;right: 0;">
+                class="col-lg-4 col-md-6 mb-5 mb-md-5 mb-lg-0 position-relative border-1 border-end border-semi-light">
+                <h2 class="fw-bold text-white">50</h2>
+                <p class="text-white text-start">Experts</p>
               </div>
 
-            </div>
-
-            <div class="col-md-6 ">
-              <div class="heading_container heading_center text-left">
-                <h2 class="text-left" style="align-self:baseline">
-                  Explore the <span>Zeng It</span> Experience
-                </h2>
-                <p>
-                  Learn how Zeng It simplifies your journey to mastering science and engineering.
-
-                </p>
-              </div>
-              <div class="box custom-box">
-                <div class="img-box">
-                  <img src="zengit/bullet_1.png" alt="">
-                </div>
-                <div class="detail-box">
-                  <h5 class="text-dark">
-                    Browse Courses
-                  </h5>
-                  <p class="text-dark">
-                    Explore our diverse range of science and engineering courses. Browse through categories, check
-                    course descriptions, and
-                    read reviews to find the perfect fit for your learning goals.
-                  </p>
-                </div>
-              </div>
-
-              <div class="box custom-box">
-                <div class="img-box">
-                  <img src="zengit/bullet_2.png" alt="">
-                </div>
-                <div class="detail-box">
-                  <h5 class="text-dark">
-                    Enroll and Learn
-                  </h5>
-                  <p class="text-dark">
-                    Enroll in your chosen courses with just a few clicks. Access course materials, video lectures,
-                    quizzes, and assignments
-                    to deepen your understanding of key concepts at your own pace.
-                  </p>
-                </div>
-              </div>
-
-              <div class="box custom-box">
-                <div class="img-box">
-                  <img src="zengit/bullet_3.png" alt="">
-                </div>
-                <div class="detail-box">
-                  <h5 class="text-dark">
-                    Complete and Earn
-                  </h5>
-                  <p class="text-dark">
-                    Dive into course content, engage with fellow learners, and complete assessments to demonstrate your
-                    newfound skills.
-                    Upon successful completion, earn industry-recognized certificates to showcase your expertise.
-                  </p>
-                </div>
+              <div class="col-lg-4 col-md-6 mb-5 mb-md-0 position-relative">
+                <h2 class="fw-bold text-white">314</h2>
+                <p class="text-white text-start">Credentials Issued</p>
               </div>
             </div>
-
           </div>
-
+          <div class="col-md-6 hero-img">
+          </div>
         </div>
       </div>
-    </section>
 
-    <!-- service section -->
+      <div class="position-relative overflow-hidden p-0 p-md-5 text-center bg-body-tertiary">
+        <div class="row py-lg-5 px-lg-4">
+          <div class="col-md-6">
+            <div style="width:100%; height: 100%; border-style:solid; border: 10px;position: relative;">
+              <img src="zengit/SubImg1.png" alt=""
+                style="object-fit: cover; width:100%; height: 100%; max-width: 410px;max-height: 410px;border-style:solid; border: 10px;border-color: #fff;position: absolute;top: 0;left: 0; object-fit: cover;">
+              <img src="zengit/SubImg2.png" alt=""
+                style="object-fit: cover; width:100%; height: 100%; max-width: 410px;max-height: 410px;border-style:solid; border: 10px;border-color: #fff;position: absolute;bottom: 0;right: 0;">
+            </div>
+          </div>
 
-    <section class="service_section layout_padding">
-      <div class="service_container">
-        <div class="container ">
-          <div class="row">
-            <div class="col-md-6 ">
-              <div class="box custom-box" style="background: unset;">
-                <div class="detail-box custom-detail-box ">
-                  <h5 class="text-white">
-                    Trusted globally by over 1 million businesses, small to large
-                  </h5>
-                  <div class="btn-box justify-unset">
-                    <a href="" class="text-white">
-                      Create Course
-                    </a>
+          <div class="col-md-1">
+          </div>
+          <div class="col-md-5 mx-auto my-8">
+            <h1>Unlock Your Potential</h1>
+            <h3 class="mb-4">Empower Your Career with Zeng It</h3>
+
+            <div class="row lead fw-normal mt-4 gap-6">
+              <div class="d-flex flex-column justify-content-between">
+
+                <div class="d-flex flex-row gap-3">
+                  <img src="zengit/bullet_1.png" class="bullet" alt="">
+                  <div class="d-flex flex-column">
+                    <h3 class="fw-bold">Earn Certificates</h3>
+                    <p class="text-start">Complete courses and earn industry-recognized certificates <br>to showcase
+                      your
+                      expertise and enhance
+                      your credibility in<br>
+                      the job market.</p>
+                  </div>
+                </div>
+                <div class="d-flex flex-row gap-3">
+                  <img src="zengit/bullet_2.png" class="bullet" alt="">
+                  <div class="d-flex flex-column">
+                    <h3 class="fw-bold">Access Anywhere, Anytime</h3>
+                    <p class="text-start">Enjoy the flexibility of learning at your own pace and<br> convenience. Access
+                      courses on any device, anytime, and<br> from
+                      anywhere in the world.</p>
+                  </div>
+                </div>
+                <div class="d-flex flex-row gap-3">
+                  <img src="zengit/bullet_3.png" class="bullet" alt="">
+                  <div class="d-flex flex-column">
+                    <h3 class="fw-bold">Expert-Led Curriculum</h3>
+                    <p class="text-start">Gain insights from industry experts and leading professionals<br> in science
+                      and
+                      engineering. Access curated content<br>
+                      designed to help you stay ahead in your field.</p>
                   </div>
                 </div>
               </div>
+
+
             </div>
 
-            <div class="col-md-6 ">
-              <div class="box custom-box" style="background: unset;">
-                <div class="detail-box custom-detail-box ">
-                  <h5 class="text-white">
-                    Embrace the freelance revolution <span style="opacity: 0;;">businesses, small to large</span>
-                  </h5>
-                  <div class="btn-box justify-unset">
-                    <a href="" class="text-white">
-                      Enroll Now
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- end service section -->
-    <!-- end potential -->
-
-    <!-- info section -->
-
-    <section class="info_section layout_padding2">
-      <div class="container-fluid" style="padding: 0px 10rem;">
-        <div class="row">
-
-
-
-          <div class="col-md-6 col-lg-2 mx-auto info_col">
-            <div class="info_link_box">
-              <h4>
-                For Engineers
-              </h4>
-              <div class="info_links">
-                <a class="active" href="#">
-                  Browse Jobs
-                </a>
-                <a class="" href="#">
-                  Add Resume
-                </a>
-                <a class="" href="#">
-                  Job Alerts
-                </a>
-                <a class="" href="#">
-                  My Bookmarks
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-2 mx-auto info_col">
-            <div class="info_link_box">
-              <h4>
-                For Companies
-              </h4>
-              <div class="info_links">
-                <a class="active" href="#">
-                  Browse Engineers
-                </a>
-                <a class="" href="#">
-                  Post a Job
-                </a>
-                <a class="" href="#">
-                  Post a Task
-                </a>
-
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-2 mx-auto info_col">
-            <div class="info_link_box">
-              <h4>
-                Helpful Links
-              </h4>
-              <div class="info_links">
-                <a class="active" href="#">
-                  Contact
-                </a>
-                <a class="" href="#">
-                  Privacy Policy
-                </a>
-                <a class="" href="#">
-                  Terms of Use
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-2 mx-auto info_col">
-            <div class="info_link_box">
-              <h4>
-                Account
-              </h4>
-              <div class="info_links">
-                <a class="active" href="#">
-                  Log In
-
-                </a>
-                <a class="" href="#">
-                  My Account
-                </a>
-
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4 info_col ">
-            <h4>
-              Sign Up For a Newsletter
-            </h4>
-            <p>Weekly breaking news, analysis and cutting edge advices on job searching.</p>
-            <form action="#">
-              <input type="text" placeholder="Enter your email address" />
-              <button type="submit">
-                Subscribe
-              </button>
-            </form>
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- end info section -->
 
-    <!-- footer section -->
-    <section class="footer_section">
-      <div class="container">
-        <p>
-          &copy; <span id="displayYear"></span> All Rights Reserved
-          .
-        </p>
-      </div>
-    </section>
-    <!-- footer section -->
 
-    <!-- jQery -->
-    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-    <!-- popper js -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-      </script>
-    <!-- bootstrap js -->
-    <script type="text/javascript" src="js/bootstrap.js"></script>
-    <!-- owl slider -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
-    </script>
-    <!-- custom js -->
-    <script type="text/javascript" src="js/custom.js"></script>
-    <!-- Google Map -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
-    </script>
-    <!-- End Google Map -->
 
+    </main>
   </body>
 
 </html>
