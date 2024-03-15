@@ -6,11 +6,36 @@ body{
       font-weight:500 !important;
 }
 
+.bg-primary{
+  background: rgba(107, 70, 193, 1)!important;
+}
+.text-primary {
+    color: rgba(107, 70, 193, 1)!important;
+}
+
+.btn-send-email{
+  width: 45px;
+  height: 45px;
+}
+
 .btn-primary {
     color: #fff;
     
     background-color: rgba(107, 70, 193, 1);
     border-color: rgba(107, 70, 193, 1);
+}
+
+.bg-dark{
+  background: #1F1C27!important;
+}
+
+.btn-course-feature{
+  /* width: Hug (215px);
+  height: Fixed (40px); */
+  padding: 6px, 20px, 6px, 20px;
+  border-radius: 8px;
+  gap: 5px;
+
 }
 
 .btn-check:focus+.btn-primary, .btn-primary:focus,.btn-primary:hover {
@@ -35,6 +60,14 @@ li>a.active{
 
 header{
   padding:0 2rem;
+}
+
+.rounded{
+  border-radius: 8px;
+}
+
+.card-img, .card-img-top{
+  border-radius: 6px;
 }
 
 p{
@@ -66,6 +99,9 @@ p{
   background-repeat: no-repeat;
   background-position: center;
 }
+.bg-semi-light{
+  background: rgba(249, 246, 255, 1);
+}
 .border-semi-light{
   border-color: rgba(184, 184, 184, 1);
   height: 4.2rem;
@@ -82,7 +118,8 @@ p{
 }
 
 h1{
-  font-size: 2.25em;
+  /* 36 */
+  font-size: 2.25rem;
   font-weight: 700;
   line-height: 48px;
   letter-spacing: -0.01em;
@@ -90,6 +127,7 @@ h1{
 }
 
 h2{
+  /* 24px */
   font-size: 1.5rem; 
 font-weight: 500;
 line-height: 36px;
@@ -98,6 +136,7 @@ text-align: left;
 }
 
 h3{
+  /* 20px */
 font-size: 1.25rem;
 font-weight: 500;
 line-height: 30px;
@@ -105,13 +144,64 @@ letter-spacing: 0em;
 text-align: left;
 }
 
+h4{
+  /* 20px */
+font-size: 1.25rem;
+font-weight: 700;
+line-height: 30px;
+letter-spacing: 0em;
+text-align: left;
+}
 
+.landing-rate{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: .5rem;
+}
 
 .text-white{
   color:rgba(255, 255, 255, 1);
 }
 .text-semi-white{
   color:rgba(214, 210, 223, 1);
+}
+
+.cs-none{
+  padding: 1.875rem;
+  border-width: 1px solid;
+  border-radius: 8px!important;
+  flex: 1 1 0px!important;
+}
+
+.cs-box{
+  padding: 3.5rem 1.5rem;
+  background: linear-gradient(to right, #6B46C1 45%, rgba(247,245,252,0)) right top / cover no-repeat, url(../zengit/img_cta.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+  border-radius: 8px!important;
+  flex: 1 1 0px!important;
+}
+
+.review-img{
+  width: 55px;
+  height: 55px;
+  border-radius: 100px;
+}
+
+.course-img{
+  width:50px;
+  height: 50px;
+  mix-blend-mode: luminosity;
+}
+
+.btn-transparent-link{
+  padding: 6px, 20px, 6px, 20px!important;
+  border-radius: 8px!important;
+  border-width: 1px!important;
+  border-color: #FFFFFF!important;
 }
 @media only screen and (min-width: 768px) {
   /* .nav{
