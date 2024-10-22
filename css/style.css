@@ -139,6 +139,10 @@ p{
   height: 64px;
   margin-right: 4px;
 }
+.logo {
+  height: 64px;
+  margin-right: 4px;
+}
 
 .gap-20{
   gap:20px;
@@ -243,8 +247,4 @@ text-align: left;
   /* .nav{
     width: 45%;
   } */
-}
-.logo{
-  height: 64px;
-  margin-right: 4px;
 }
