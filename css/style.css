@@ -251,3 +251,37 @@ text-align: left;
     width: 45%;
   } */
 }
+.hero-image {
+  position: relative;
+  background-image: url(../zengit/BannerAboutUs.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* background: url(../zengit/Headline.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; */
+}
+
+.hero-text {
+  text-align: center;
+  color: white;
+  font-size: 3rem; /* Adjust font size as needed */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.masterClass-image {
+  position: relative;
+  background-image: url(../zengit/Bannermasterclass.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
