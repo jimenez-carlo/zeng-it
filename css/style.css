@@ -284,4 +284,14 @@ text-align: left;
   justify-content: center;
   
 }
+.core-values-image {
+  position: relative;
+  background-image: url(../zengit/BannerMission.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
